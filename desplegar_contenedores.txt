@@ -30,3 +30,14 @@ docker run -d --name wp1 -p 9001:80 --network net4 --env-file wordpress.env word
 #	WORDPRESS_DB_PASSWORD=carlosp
 #	WORDPRESS_DB_NAME=lumina
 
+
+#para desplegar jenkins se descarga la imagen del dockerhub con el siguiente comando
+docker pull jenkins/jenkins
+
+#se crea el contenedor con el siguiente comando
+docker run -d --name jenkins -p 8080:8080 -p 50000:50000 -v jenkins_home:/var/jenkins_home jenkins/jenkins
+
+#se ejecuta el siguiente comando para copiar el password inicial de la maquina y se aplica en el navegador web  en  http://localhost:8080/
+docker exec jenkins cat  /var/jenkins_home/secrets/initialAdminPassword
+
+#ya se puede accesar al jenkins para realizar la configuracion final
