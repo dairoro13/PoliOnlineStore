@@ -24,3 +24,10 @@ services:
       - WORDPRESS_DB_USER=carlosu
       - WORDPRESS_DB_PASSWORD=carlosp
       - WORDPRESS_DB_NAME=carlosdb
+  pru-jenkins:
+    image: jenkins/jenkins:alpine
+    volumes:
+      - ./data01/jenkins:/var/jenkins_home
+    ports:
+      - 9002:8080
+      - 9003:50000

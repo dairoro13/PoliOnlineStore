@@ -1,0 +1,35 @@
+#IC Grupo3
+# - Dairon Rodríguez
+# - Carlos Burgos
+# - Daniel Rincón
+# - Alejandro Jiménez
+# - Patricia Rodríguez
+
+1- hay que clonar el repositorio en el dico local con el comando:
+    grit clone https://github.com/dairoro13/PoliOnlineStore
+
+2- para desplegar los contenedores hay que estar en el mismo directorio del 
+   archivo docker-compose.yml y ejecutar el comando:
+    docker compose up -d 
+
+usuarios y claves:
+
+dbprod
+    este es el contenedor de base de datos mysql
+        MYSQL_ROOT_PASSWORD=carlosp
+        MYSQL_USER=carlosu
+        MYSQL_DATABASE=carlosdb
+        MYSQL_PASSWORD=carlosp
+
+pru-jenkins
+    contenedor de jenkins
+    ingreso     http://localhost:9002/ 
+    usuario     grupo3
+    password    grupo3
+    
+web-wordpress
+    contenedor jenkins
+    ingreso     http://localhost:9001/
+    usuario     admin
+    password    admin
+
