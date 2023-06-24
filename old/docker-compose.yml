@@ -1,17 +1,26 @@
-version: '3.8'
+version: '3'
 services:
- nginx:
-  build: 
-   context: ./
-   dockerfile: Dockerfile
-  container_name: nginx-server
-  restart: always
-  ports:
-   - 8080:80
-  
-  volumes:
-   - ./proyecto-ic:/usr/share/nginx/html/
-
-volumes: {}
-
-
+  dbprod:
+    image: mysql
+    ports:
+      - 3306:3306
+    volumes:
+      - ./data01/db:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=carlosp
+      - MYSQL_USER=carlosu
+      - MYSQL_DATABASE=carlosdb
+      - MYSQL_PASSWORD=carlosp
+  web-wordpress:
+    image: wordpress
+    depends_on:
+      - dbprod
+    volumes:
+      - ./data01/html:/var/www/html
+    ports:
+      - 9001:80
+    environment:
+      - WORDPRESS_DB_HOST=dbprod
+      - WORDPRESS_DB_USER=carlosu
+      - WORDPRESS_DB_PASSWORD=carlosp
+      - WORDPRESS_DB_NAME=carlosdb
