@@ -1,0 +1,9 @@
+Ingresar en el directorio raiz despues de clonar el repositorio
+
+ejecuttar el siguiente comando
+  docker build -t mysql01 ./mysql/
+
+ya creada la imagen digitar el siguiente comando para crear el contenedor de la base de datos
+  montada en la carpeta local
+
+  docker run    

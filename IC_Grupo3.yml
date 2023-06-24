@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+#despliegue contenedor mysql
+  mysql01:
+    container_name: mysqlwp01
+    image: mysql
+    restart: always
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql/databd:/var/lib/mysql
+    
+    
