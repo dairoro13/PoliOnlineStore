@@ -30,6 +30,7 @@ pru-jenkins
 web-wordpress
     contenedor jenkins
     ingreso     http://localhost:9001/
+                    wp-admin/install.php
     usuario     admin
     password    admin
 
