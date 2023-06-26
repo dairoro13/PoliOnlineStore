@@ -1,0 +1,7 @@
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Holamundo1
+[Holamundo1] $ /bin/sh -xe /tmp/jenkins1426619918204930582.sh
++ echo 'Hola somos el Grupo 3 de IC'
+Hola somos el Grupo 3 de IC
+Finished: SUCCESS

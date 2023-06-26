@@ -1,0 +1,38 @@
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/holamundo-icgrupo3
+The recommended git tool is: NONE
+using credential c4f0ebe0-2587-4c48-ae0d-d6f816b15621
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/holamundo-icgrupo3/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/dairoro13/PoliOnlineStore.git # timeout=10
+Fetching upstream changes from https://github.com/dairoro13/PoliOnlineStore.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/dairoro13/PoliOnlineStore.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+ERROR: Build step failed with exception
+java.lang.IllegalArgumentException: Cannot obtain Gerrit server name. Please check your Gerrit Trigger settings
+	at org.jenkinsci.plugins.sonargerrit.util.DataHelper.checkNotEmpty(DataHelper.java:38)
+	at org.jenkinsci.plugins.sonargerrit.gerrit.GerritConnectionInfo.checkServerName(GerritConnectionInfo.java:104)
+	at org.jenkinsci.plugins.sonargerrit.gerrit.GerritConnectionInfo.retrieveServerName(GerritConnectionInfo.java:79)
+	at org.jenkinsci.plugins.sonargerrit.gerrit.GerritConnectionInfo.<init>(GerritConnectionInfo.java:39)
+	at org.jenkinsci.plugins.sonargerrit.SonarToGerritPublisher.perform(SonarToGerritPublisher.java:90)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.performAllBuildSteps(AbstractBuild.java:767)
+	at hudson.model.Build$BuildExecution.post2(Build.java:179)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.post(AbstractBuild.java:711)
+	at hudson.model.Run.execute(Run.java:1925)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+Build step 'Post SonarQube issues as Gerrit comments' marked build as failure
+Finished: FAILURE

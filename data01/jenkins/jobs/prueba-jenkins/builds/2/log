@@ -1,0 +1,17 @@
+Started by user [8mha:////4MkAxb5W6k524ARTgk+KeME50eW0ZTVfH3utUUAmnxE2AAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAy2EgYe/dLi1CL99KLSgnxjANBp++LBAAAA[0mgrupo3
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/prueba-jenkins
+The recommended git tool is: NONE
+using credential c4f0ebe0-2587-4c48-ae0d-d6f816b15621
+ > git rev-parse --resolve-git-dir /var/jenkins_home/workspace/prueba-jenkins/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/cebpsis/Pruebajenkins.git # timeout=10
+Fetching upstream changes from https://github.com/cebpsis/Pruebajenkins.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.40.1'
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --force --progress -- https://github.com/cebpsis/Pruebajenkins.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse origin/master^{commit} # timeout=10
+ERROR: Couldn't find any revision to build. Verify the repository and branch configuration for this job.
+Finished: FAILURE
